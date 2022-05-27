@@ -63,7 +63,39 @@ def unclean(li):
 # 8. минимум и максимум
 def min_max(li):
     print("Мини " + str(min(li)) + " , Макси " + str(max(li)))
+
+
 min_max(my_list)
+
+
+# 9.  високосный год или нет.
+def year():
+    x = int(input("Введите год"))
+    if x % 400 == 0 or x % 4 == 0 and x % 100 != 0:
+        return True
+    else:
+        False
+
+
+# 10. Время года
+def season(month):
+    if 13 > month > 0:
+        if month < 3 or month > 11:
+            print("Зима")
+        elif month < 7:
+            print("Весна")
+        elif month < 10:
+            print("Лето")
+        else:
+            print("Весна")
+    else:
+        month = (int(input("Введите месяц, число от 1 - 12")))
+        season(month)
+
+
+# 11 Проверка даты на существование
+def date(d, m ,y):
+
 
 
 
