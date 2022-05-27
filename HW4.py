@@ -93,9 +93,31 @@ def season(month):
         season(month)
 
 
-# 11 Проверка даты на существование
-def date(d, m ,y):
+# 11. Проверка даты на существование
+import datetime
 
 
+def date(d, m, y):
+    try:
+        datetime.date(y, m, d)
+    except ValueError:
+        return False
+    else:
+        return True
 
 
+# 12. Новый список согласно условиям.
+list_1 = [16, -17, 2, 78.7, False, False, {'True': True}, 555, 12, 23, 42, 'DD']
+
+
+def list_corrected(li):
+    new_list = []
+    for i in li:
+        if type(i) == float:
+            new_list.append(i)
+        elif type(i) == int:
+            new_list.append(i)
+    return sorted(new_list)
+
+
+print(list_corrected(list_1))
