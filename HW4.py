@@ -113,9 +113,7 @@ list_1 = [16, -17, 2, 78.7, False, False, {'True': True}, 555, 12, 23, 42, 'DD']
 def list_corrected(li):
     new_list = []
     for i in li:
-        if type(i) == float:
-            new_list.append(i)
-        elif type(i) == int:
+        if type(i) == float or type(i) == int:
             new_list.append(i)
     return sorted(new_list)
 

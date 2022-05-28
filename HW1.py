@@ -9,5 +9,5 @@ print(names[0::2])
 # Написать генератор списка, который создаст список, состоящий только из элементов с нечётным количеством цифр.
 list1 = [i for i in range(0, 110) if i < 10 or i > 99]
 print(list1)
-list2=[j for j in [i for i in range(1,1000)] if len(str(j)) %2 != 0]
+list2 = [j for j in [i for i in range(1,1000)] if len(str(j)) %2 != 0]
 print(list2)

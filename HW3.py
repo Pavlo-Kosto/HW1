@@ -22,12 +22,12 @@
 password = "dodo"
 man1 = input("Введите пароль")
 try_p = 1
-while man1 != password:
+while (man1 != password) and (try_p != 5):
     try_p += 1
     man1 = input("Введите пароль")
-    if try_p ==5:
-        print("До встречи")
-        break
 if man1 == password:
     print("красавчиг")
+else:
+    print("До встречи")
+
 
