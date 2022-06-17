@@ -42,7 +42,7 @@ def step():
 
 step()
 
-задача 5 yield next * 5
+# задача 5 yield next * 5
 wtf = (123, 'try', 1992, 2001, 'who', 'when')
 
 
