@@ -42,7 +42,11 @@ def step():
 
 step()
 
+<<<<<<< HEAD
 # задача 5 yield next * 5
+=======
+задача 5 yield next * 5
+>>>>>>> b5f53d9483492b45a127861b76718007f4a7f4d0
 wtf = (123, 'try', 1992, 2001, 'who', 'when')
 
 
